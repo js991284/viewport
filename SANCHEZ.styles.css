@@ -226,9 +226,10 @@ img{
 
 /* ---------- LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN LARGE SCREEN SIZES --------------- */
-    /* header, footer{
-        background-color: var(--lime-green);
-        color: var(--dark-gray);
+@media screen and (min-width: 1024px){
+    header, footer{
+    background-color: var(--lime-green);
+    color: var(--dark-gray);
     }
 
     h1, h2{
@@ -257,7 +258,8 @@ img{
 
     #seven, #eight{
         grid-row: 3/4;
-    } */
+    }
+}
 /* --------------- END LARGE SCREEN SIZES --------------- */
 
 
