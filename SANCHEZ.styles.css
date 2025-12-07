@@ -99,11 +99,11 @@ footer .icon{
 
 /* ----- HANDLE PREFERS REDUCED MOTION FOR THE ICON ANIMATIONS ----- */
 /* --------------- BEGIN USER PREFERS REDUCED MOTION QUERY --------------- */
-    @-webkit-keyframes icon-animation {
-        0% { font-variation-settings: "TIME" 1; }
-    }
-    @keyframes icon-animation {
-        0% { font-variation-settings: "TIME" 1; }
+    @media (prefers-reduced-motion: reduce){
+        .icon {
+            -webkit-animation: none;
+            animation: none;
+        }
     }
 /* --------------- END USER PREFERS REDUCED MOTION QUERY --------------- */
 
@@ -158,7 +158,8 @@ img{
 
 /* ---------- SMALL SCREEN STYLES ---------- */
 /* --------------- BEGIN SMALL SCREEN SIZES --------------- */
-    /* header, footer{
+@media screen and (min-width: 480px) {
+    header, footer{
         background-color: var(--lime-green);
         color: var(--dark-gray);
     }
@@ -184,6 +185,7 @@ img{
         width: 200px;
         max-width: 200px;
     } */
+}
 /* --------------- END SMALL SCREEN SIZES --------------- */
 
 
